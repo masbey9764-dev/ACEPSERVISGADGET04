@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="CEPBEY FIXERGADGET SOLUTION SERVICE HP - Service Android, iPhone, Laptop dan All Gadget Bergaransi.">
+
+    <meta name="keywords"
+          content="service hp, service iphone, service android, service laptop, ganti lcd, ganti baterai, flashing, emmc, ufs, chipset">
+
+    <title>CEPBEY FIXERGADGET | SOLUTION SERVICE HP</title>
+
+    <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background:
+                radial-gradient(
+                    circle at top,
+                    #123452 0%,
+                    #07121d 35%,
+                    #020509 75%
+                );
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+
+            background: rgba(2, 7, 12, 0.94);
+            backdrop-filter: blur(15px);
+
+            border-bottom: 1px solid rgba(0, 183, 255, 0.3);
+        }
+
+        .navbar {
+            min-height: 75px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            color: white;
+        }
+
+        .brand img {
+            width: 55px;
+            height: 55px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 2px solid #00d9ff;
+
+            box-shadow:
+                0 0 15px rgba(0, 217, 255, 0.5);
+        }
+
+        .brand-text {
+            font-size: 15px;
+            font-weight: 900;
+
+            line-height: 1.1;
+        }
+
+        .brand-text span {
+            color: #00d9ff;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        nav a {
+            color: #cbd9e6;
+            font-size: 14px;
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        .nav-wa {
+            background: #20d66b;
+            color: #001b0b !important;
+
+            padding: 10px 16px;
+
+            border-radius: 9px;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 720px;
+
+            display: flex;
+            align-items: center;
+
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            left: -200px;
+            top: 80px;
+
+            background: #008cff;
+
+            filter: blur(180px);
+
+            opacity: 0.13;
+        }
+
+        .hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+            height: 450px;
+
+            right: -200px;
+            bottom: -100px;
+
+            background: #00d9ff;
+
+            filter: blur(180px);
+
+            opacity: 0.08;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns: 1.05fr 0.95fr;
+
+            gap: 60px;
+
+            align-items: center;
+
+            padding: 70px 0;
+        }
+
+        .badge {
+            display: inline-block;
+
+            padding: 8px 16px;
+
+            margin-bottom: 20px;
+
+            color: #00d9ff;
+
+            background: rgba(0, 183, 255, 0.08);
+
+            border: 1px solid #00aeea;
+
+            border-radius: 50px;
+
+            font-size: 13px;
+            font-weight: bold;
+
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 72px);
+
+            line-height: 0.98;
+
+            letter-spacing: -3px;
+
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: #00d9ff;
+
+            text-shadow:
+                0 0 30px rgba(0, 217, 255, 0.35);
+        }
+
+        .hero-description {
+            color: #aab9c8;
+
+            font-size: 18px;
+
+            max-width: 680px;
+
+            margin-top: 25px;
+        }
+
+        .hero-buttons {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 14px 20px;
+
+            border-radius: 11px;
+
+            font-weight: 900;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-primary {
+            color: #001321;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #00d9ff,
+                    #0075df
+                );
+
+            box-shadow:
+                0 0 25px rgba(0, 174, 255, 0.25);
+        }
+
+        .btn-secondary {
+            color: white;
+
+            background: #09141f;
+
+            border: 1px solid #24516d;
+        }
+
+
+        /* =========================
+           LOGO DISPLAY
+        ========================= */
+
+        .logo-card {
+            padding: 18px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0d1e2d,
+                    #03070b
+                );
+
+            border: 1px solid rgba(0, 183, 255, 0.35);
+
+            border-radius: 28px;
+
+            box-shadow:
+                0 30px 70px rgba(0, 0, 0, 0.6),
+                0 0 50px rgba(0, 162, 255, 0.12);
+        }
+
+        .logo-card img {
+            width: 100%;
+
+            display: block;
+
+            border-radius: 18px;
+        }
+
+
+        /* =========================
+           TRUST
+        ========================= */
+
+        .trust {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-top: 30px;
+        }
+
+        .trust-box {
+            text-align: center;
+
+            padding: 13px;
+
+            background: rgba(8, 19, 30, 0.8);
+
+            border: 1px solid #17364d;
+
+            border-radius: 13px;
+        }
+
+        .trust-box strong {
+            display: block;
+        }
+
+        .trust-box small {
+            color: #8295a8;
+        }
+
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+        .section-title small {
+            color: #00d9ff;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(30px, 4vw, 46px);
+
+            margin: 7px 0;
+        }
+
+        .section-title p {
+            color: #9eafbf;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 17px;
+        }
+
+        .service-card {
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 23px;
+
+            min-height: 175px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0b1b29,
+                    #040a10
+                );
+
+            border: 1px solid #173950;
+
+            border-radius: 18px;
+
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #00d9ff;
+
+            box-shadow:
+                0 15px 40px rgba(0, 174, 255, 0.12);
+        }
+
+        .service-icon {
+            font-size: 35px;
+
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            color: #91a4b7;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           PROMO
+        ========================= */
+
+        .promo-box {
+            padding: 45px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    #061a2b,
+                    #07101a
+                );
+
+            border: 1px solid #1576aa;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 0 60px rgba(0, 153, 255, 0.1);
+        }
+
+        .promo-box h2 {
+            font-size: clamp(32px, 5vw, 55px);
+
+            margin: 8px 0;
+        }
+
+        .promo-box h2 span {
+            color: #00d9ff;
+        }
+
+        .promo-box > p {
+            max-width: 800px;
+
+            margin: auto;
+
+            color: #aab9c8;
+        }
+
+        .promo-list {
+            max-width: 900px;
+
+            margin: 30px auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 10px;
+
+            text-align: left;
+        }
+
+        .promo-item {
+            padding: 12px 15px;
+
+            background: #07131e;
+
+            border: 1px solid #15364d;
+
+            border-radius: 10px;
+
+            color: #dbe7f2;
+        }
+
+        .promo-item::before {
+            content: "✓";
+
+            color: #00d9ff;
+
+            font-weight: bold;
+
+            margin-right: 10px;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 20px;
+        }
+
+        .contact-card {
+            padding: 30px;
+
+            background: #08131d;
+
+            border: 1px solid #173950;
+
+            border-radius: 20px;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .wa-box {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            padding: 15px;
+
+            background: #06140c;
+
+            border: 1px solid #176b3a;
+
+            border-radius: 12px;
+        }
+
+        .wa-number {
+            display: block;
+
+            font-size: 20px;
+
+            font-weight: 900;
+        }
+
+        .wa-label {
+            display: block;
+
+            color: #80a28e;
+
+            font-size: 12px;
+        }
+
+        .wa-button {
+            background: #20d66b;
+
+            color: #001b0b;
+
+            padding: 10px 17px;
+
+            border-radius: 9px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 30px 0;
+
+            text-align: center;
+
+            color: #8193a5;
+
+            border-top: 1px solid #143148;
+        }
+
+        footer strong {
+            color: #00d9ff;
+        }
+
+
+        /* =========================
+           FLOAT WHATSAPP
+        ========================= */
+
+        .floating-wa {
+            position: fixed;
+
+            right: 22px;
+            bottom: 22px;
+
+            width: 62px;
+            height: 62px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #20d66b;
+
+            color: #001b0b;
+
+            font-size: 27px;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 8px 35px rgba(0,0,0,.7);
+
+            z-index: 9999;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+
+            .services {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 50px 0;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            .trust {
+                grid-template-columns: 1fr;
+            }
+
+            .promo-box {
+                padding: 28px 18px;
+            }
+
+            .promo-list {
+                grid-template-columns: 1fr;
+            }
+
+            .wa-box {
+                flex-direction: column;
+
+                text-align: center;
+            }
+
+            .wa-button {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     HEADER
+================================================== -->
+
+<header>
+
+    <div class="container navbar">
+
+        <a href="#home" class="brand">
+
+            <img
+                src="logo.jpg"
+                alt="Logo CEPBEY FIXERGADGET">
+
+            <div class="brand-text">
+
+                CEPBEY
+                <br>
+
+                <span>FIXERGADGET</span>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#home">
+                HOME
+            </a>
+
+            <a href="#layanan">
+                LAYANAN
+            </a>
+
+            <a href="#promo">
+                PROMO
+            </a>
+
+            <a href="#kontak">
+                KONTAK
+            </a>
+
+            <a
+                class="nav-wa"
+                href="https://wa.me/6283821864167?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20konsultasi%20service."
+                target="_blank">
+
+                WhatsApp
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+
+        <div>
+
+            <div class="badge">
+
+                ⚡ SERVICE HP BERGARANSI
+
+            </div>
+
+
+            <h1>
+
+                SOLUSI
+
+                <span>
+                    SERVICE HP
+                </span>
+
+                PROFESIONAL
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                <strong>
+                    CEPBEY FIXERGADGET SOLUTION SERVICE HP
+                </strong>
+
+                melayani service Android, iPhone, Laptop
+                dan berbagai macam gadget.
+
+                Perbaikan hardware maupun software
+                dengan pelayanan profesional dan bergaransi.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a
+                    class="btn btn-primary"
+                    href="https://wa.me/6283821864167?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20service%20gadget."
+                    target="_blank">
+
+                    💬 CHAT WHATSAPP
+
+                </a>
+
+
+                <a
+                    class="btn btn-secondary"
+                    href="#layanan">
+
+                    🔧 LIHAT LAYANAN
+
+                </a>
+
+            </div>
+
+
+            <div class="trust">
+
+                <div class="trust-box">
+
+                    <strong>
+                        🛡️ BERGARANSI
+                    </strong>
+
+                    <small>
+                        Service Bergaransi
+                    </small>
+
+                </div>
+
+
+                <div class="trust-box">
+
+                    <strong>
+                        🔧 PROFESIONAL
+                    </strong>
+
+                    <small>
+                        Teknisi Berpengalaman
+                    </small>
+
+                </div>
+
+
+                <div class="trust-box">
+
+                    <strong>
+                        ⚡ FAST RESPONSE
+                    </strong>
+
+                    <small>
+                        Siap Melayani
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="logo-card">
+
+            <img
+                src="logo.jpg"
+                alt="CEPBEY FIXERGADGET SOLUTION SERVICE HP">
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     LAYANAN
+================================================== -->
+
+<section id="layanan">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                LAYANAN KAMI
+            </small>
+
+            <h2>
+                SEMUA GADGET KAMI TANGANI
+            </h2>
+
+            <p>
+                Dari kerusakan ringan hingga perbaikan
+                hardware dan software.
+            </p>
+
+        </div>
+
+
+
+        <div class="services">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📱
+                </div>
+
+                <h3>
+                    GANTI LCD
+                </h3>
+
+                <p>
+                    Android • iPhone • Laptop
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔋
+                </div>
+
+                <h3>
+                    GANTI BATREI
+                </h3>
+
+                <p>
+                    Android • iPhone • Laptop
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⏻
+                </div>
+
+                <h3>
+                    SWITCH POWER / VOLUME
+                </h3>
+
+                <p>
+                    Android • iPhone
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💧
+                </div>
+
+                <h3>
+                    MATI MASUK AIR
+                </h3>
+
+                <p>
+                    Penanganan gadget yang terkena
+                    air atau cairan.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🛠️
+                </div>
+
+                <h3>
+                    PERBAIKAN MATI TOTAL
+                </h3>
+
+                <p>
+                    Diagnosa dan perbaikan perangkat
+                    mati total.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    NOT CHARGING
+                </h3>
+
+                <p>
+                    Perbaikan masalah pengisian daya
+                    dan charging.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔌
+                </div>
+
+                <h3>
+                    FAKE CHARGING
+                </h3>
+
+                <p>
+                    Penanganan masalah indikator
+                    charging yang tidak normal.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔄
+                </div>
+
+                <h3>
+                    BOOTLOOP
+                </h3>
+
+                <p>
+                    Perbaikan perangkat yang berhenti
+                    pada logo atau restart terus.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    UNLOCK PASSWORD
+                </h3>
+
+                <p>
+                    Layanan unlock perangkat milik
+                    pelanggan sesuai prosedur.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔓
+                </div>
+
+                <h3>
+                    UNLOCK FRP
+                </h3>
+
+                <p>
+                    Penanganan FRP untuk perangkat
+                    yang sah milik pelanggan.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ☁️
+                </div>
+
+                <h3>
+                    UNLOCK iCLOUD
+                </h3>
+
+                <p>
+                    Penanganan perangkat dengan
+                    bukti kepemilikan.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    📲
+                </div>
+
+                <h3>
+                    UNLOCK MiCloud
+                </h3>
+
+                <p>
+                    Penanganan perangkat dengan
+                    bukti kepemilikan.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💻
+                </div>
+
+                <h3>
+                    FLASHING
+                </h3>
+
+                <p>
+                    Flashing software Android
+                    dan perangkat yang kompatibel.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    FULL FLASHING
+                </h3>
+
+                <p>
+                    Penanganan software secara
+                    menyeluruh sesuai perangkat.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    💾
+                </div>
+
+                <h3>
+                    UPGRADE STORAGE
+                </h3>
+
+                <p>
+                    Upgrade kapasitas penyimpanan
+                    sesuai kompatibilitas perangkat.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🧩
+                </div>
+
+                <h3>
+                    GANTI EMMC / UFS
+                </h3>
+
+                <p>
+                    Penggantian EMMC dan UFS
+                    sesuai kebutuhan.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    GANTI CHIPSET
+                </h3>
+
+                <p>
+                    Perbaikan dan penggantian
+                    chipset perangkat.
+                </p>
+
+            </div>
+
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    🔧
+                </div>
+
+                <h3>
+                    ALL GADGET
+                </h3>
+
+                <p>
+                    Perbaikan berbagai kerusakan
+                    gadget lainnya.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PROMO
+================================================== -->
+
+<section id="promo">
+
+    <div class="container">
+
+        <div class="promo-box">
+
+
+            <div class="section-title">
+
+                <small>
+                    PROMO SERVICE
+                </small>
+
+                <h2>
+
+                    SERVICE HP
+
+                    <span>
+                        BERGARANSI
+                    </span>
+
+                </h2>
+
+                <p>
+
+                    Bawa gadget bermasalah Anda
+                    dan konsultasikan kerusakannya
+                    kepada teknisi CEPBEY FIXERGADGET.
+
+                </p>
+
+            </div>
+
+
+            <div class="promo-list">
+
+
+                <div class="promo-item">
+                    Ganti LCD Android
+                </div>
+
+                <div class="promo-item">
+                    Ganti LCD iPhone
+                </div>
+
+                <div class="promo-item">
+                    Ganti LCD Laptop
+                </div>
+
+                <div class="promo-item">
+                    Ganti Batrei Android
+                </div>
+
+                <div class="promo-item">
+                    Ganti Batrei iPhone
+                </div>
+
+                <div class="promo-item">
+                    Ganti Batrei Laptop
+                </div>
+
+                <div class="promo-item">
+                    Switch Power / Volume
+                </div>
+
+                <div class="promo-item">
+                    Mati Total
+                </div>
+
+                <div class="promo-item">
+                    Not Charging
+                </div>
+
+                <div class="promo-item">
+                    Fake Charging
+                </div>
+
+                <div class="promo-item">
+                    Mati Masuk Air
+                </div>
+
+                <div class="promo-item">
+                    Bootloop
+                </div>
+
+                <div class="promo-item">
+                    Unlock Password
+                </div>
+
+                <div class="promo-item">
+                    Unlock FRP
+                </div>
+
+                <div class="promo-item">
+                    Unlock iCloud
+                </div>
+
+                <div class="promo-item">
+                    Unlock MiCloud
+                </div>
+
+                <div class="promo-item">
+                    Flashing
+                </div>
+
+                <div class="promo-item">
+                    Full Flashing
+                </div>
+
+                <div class="promo-item">
+                    Upgrade Storage
+                </div>
+
+                <div class="promo-item">
+                    Ganti EMMC
+                </div>
+
+                <div class="promo-item">
+                    Ganti UFS
+                </div>
+
+                <div class="promo-item">
+                    Ganti Chipset
+                </div>
+
+            </div>
+
+
+            <a
+                class="btn btn-primary"
+                href="https://wa.me/6283821864167?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20konsultasi%20promo%20service."
+                target="_blank">
+
+                🔥 TANYA PROMO SEKARANG
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     KONTAK
+================================================== -->
+
+<section id="kontak">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <small>
+                HUBUNGI KAMI
+            </small>
+
+            <h2>
+                SIAP MELAYANI GADGET ANDA
+            </h2>
+
+            <p>
+                Klik tombol WhatsApp untuk konsultasi
+                dan informasi service.
+            </p>
+
+        </div>
+
+
+
+        <div class="contact-grid">
+
+
+            <!-- WHATSAPP 1 -->
+
+            <div class="contact-card">
+
+                <h3>
+                    📲 WhatsApp 1
+                </h3>
+
+                <div class="wa-box">
+
+                    <div>
+
+                        <span class="wa-number">
+                            0838 2186 4167
+                        </span>
+
+                        <span class="wa-label">
+                            Konsultasi Service
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        class="wa-button"
+                        href="https://wa.me/6283821864167?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20konsultasi%20service."
+                        target="_blank">
+
+                        CHAT
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- WHATSAPP 2 -->
+
+            <div class="contact-card">
+
+                <h3>
+                    📲 WhatsApp 2
+                </h3>
+
+                <div class="wa-box">
+
+                    <div>
+
+                        <span class="wa-number">
+                            0851 3980 0537
+                        </span>
+
+                        <span class="wa-label">
+                            Konsultasi Service
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        class="wa-button"
+                        href="https://wa.me/6285139800537?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20konsultasi%20service."
+                        target="_blank">
+
+                        CHAT
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <strong>
+            CEPBEY FIXERGADGET
+        </strong>
+
+        SOLUTION SERVICE HP
+
+        <br>
+
+        © 2026 • Service HP • Android • iPhone • Laptop • All Gadget
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================================
+     FLOATING WHATSAPP
+================================================== -->
+
+<a
+    class="floating-wa"
+    href="https://wa.me/6283821864167?text=Halo%20CEPBEY%20FIXERGADGET,%20saya%20ingin%20konsultasi%20service."
+    target="_blank"
+    title="Chat WhatsApp">
+
+    ☎
+
+</a>
+
+
+</body>
+</html>
